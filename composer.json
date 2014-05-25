@@ -1,18 +1,19 @@
 {
-	"name": "c006/yii2-submit-spinner",
-	"description": "Adds a div overlay with a spinning loader",
-	"type": "yii2-extension",
-	"keywords": ["yii2","extension","widgets","form"],
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Jon Chambers",
-			"email": "jchambers.dev@gmail.com"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"c006\\": ""
-		}
-	}
+    "name"       : "c006/yii2-submit-spinner",
+    "description": "Adds a div overlay with a spinning loader on submit",
+    "type"       : "yii2-extension",
+    "keywords"   : ["yii2", "extension", "widgets", "form"],
+    "license"    : "MIT",
+    "authors"    : [
+        {
+            "name" : "Jon Chambers",
+            "email": "jchambers.dev@gmail.com"
+        }
+    ],
+    "autoload"         : {
+        "psr-4": {
+            "c006\\": ""
+        }
+    },
+    "minimum-stability": "dev"
 }
