@@ -1,0 +1,97 @@
+<?php
+
+    namespace c006\yii2;
+
+    use yii\base\Widget;
+
+    /**
+     * Class SubmitSpinner
+     *
+     * @package c006\yii2
+     */
+    class SubmitSpinner extends Widget
+    {
+
+        /**
+         * @var string
+         */
+        public $bg_color = '#444444';
+        /**
+         * @var float
+         */
+        public $bg_opacity = 0.8;
+        /**
+         * @var int
+         */
+        public $spin_speed = 4;
+        /**
+         * @var int
+         */
+        public $radius = 100;
+        /**
+         * @var float
+         */
+        public $bg_spinner_opacity = 0.6;
+        /**
+         * @var string
+         */
+        public $bg_spinner_color = '#EEEEEE';
+        /**
+         * @var string
+         */
+        public $section_color = '#CCCCCC';
+        /**
+         * @var int
+         */
+        public $sections = 15;
+        /**
+         * @var int
+         */
+        public $section_size = 20;
+        /**
+         * @var int
+         */
+        public $section_offset = 80;
+        /**
+         * @var float
+         */
+        public $section_opacity_base = 0.25;
+        /**
+         * @var int
+         */
+        public $proportionate_increase = 1;
+
+
+        /**
+         *
+         */
+        function init()
+        {
+            parent::init();
+            $view = $this->getView();
+            SubmitSpinnerAssets::register($view);
+        }
+
+
+        /**
+         * @return string
+         */
+        public function run()
+        {
+            return $this->render('submit-spinner', [
+                    'bg_color'               => $this->bg_color,
+                    'bg_opacity'             => $this->bg_opacity,
+                    'spin_speed'             => $this->spin_speed,
+                    'radius'                 => $this->radius,
+                    'bg_spinner_opacity'     => $this->bg_spinner_opacity,
+                    'bg_spinner_color'       => $this->bg_spinner_color,
+                    'sections'               => $this->sections,
+                    'section_size'           => $this->section_size,
+                    'section_color'          => $this->section_color,
+                    'section_offset'         => $this->section_offset,
+                    'section_opacity_base'   => $this->section_opacity_base,
+                    'proportionate_increase' => $this->proportionate_increase,
+                ]
+            );
+        }
+    }
