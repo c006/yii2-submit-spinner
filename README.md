@@ -1,10 +1,6 @@
 Yii2 Submit Spinner
 ===================
 
-
-*( Please do not use, testing only )*
----------------------------------------
-
 Installation
 ------------
 
