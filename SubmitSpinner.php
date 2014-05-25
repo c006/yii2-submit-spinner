@@ -1,13 +1,13 @@
 <?php
 
-    namespace c006\yii2;
+    namespace c006\spinner;
 
     use yii\base\Widget;
 
     /**
      * Class SubmitSpinner
      *
-     * @package c006\yii2
+     * @package c006\spinner
      */
     class SubmitSpinner extends Widget
     {

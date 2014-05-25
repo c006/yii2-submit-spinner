@@ -81,7 +81,7 @@ Once the extension is installed, simply use it in your code by  :
 **Defaults option:**
 
 >
-    <?= \c006\yii2\SubmitSpinner::widget(); ?>
+    <?= \c006\spinner\SubmitSpinner::widget(); ?>
 
 
 
@@ -90,7 +90,7 @@ _(using defaults)_
 
 >
     <?=
-        c006\yii2\SubmitSpinner::widget(
+        c006\spinner\SubmitSpinner::widget(
                                [
                                    'bg_color'               => '#444444',
                                    'bg_opacity'             => 0.8,
@@ -113,7 +113,7 @@ _(5 large dots only, no background spinner)_
 
 
 >
-    <?= c006\yii2\SubmitSpinner::widget(
+    <?= c006\spinner\SubmitSpinner::widget(
                                   [
                                       'bg_color'               => '#333333',
                                       'bg_opacity'             => 0.8,

@@ -6,7 +6,7 @@
  * Time: 11:47 AM
  */
 
-namespace c006\yii2;
+namespace c006\spinner;
 
 
 use yii\web\AssetBundle;
