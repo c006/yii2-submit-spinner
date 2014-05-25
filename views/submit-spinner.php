@@ -23,7 +23,7 @@
 ?>
 <style type="text/css">
     #c006 {
-        display          : block;
+        display          : none;
         position         : absolute;
         left             : 0;
         top              : 0;

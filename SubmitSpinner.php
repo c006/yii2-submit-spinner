@@ -27,19 +27,19 @@
         /**
          * @var int
          */
-        public $radius = 100;
+        public $radius = 200;
         /**
          * @var float
          */
-        public $bg_spinner_opacity = 0.6;
+        public $bg_spinner_opacity = 0.5;
         /**
          * @var string
          */
-        public $bg_spinner_color = '#EEEEEE';
+        public $bg_spinner_color = '#000000';
         /**
          * @var string
          */
-        public $section_color = '#CCCCCC';
+        public $section_color = '#FFFFFF';
         /**
          * @var int
          */
