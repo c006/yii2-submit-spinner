@@ -18,5 +18,5 @@
             "c006\\spinner\\": ""
         }
     },
-    "minimum-stability": "*"
+    "minimum-stability": "dev"
 }
