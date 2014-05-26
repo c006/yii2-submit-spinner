@@ -10,13 +10,18 @@
             "email": "jchambers.dev@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/c006/yii2-submit-spinner.git"
+        },
+    ],
     "require"    : {
-        "yiisoft/jquery": "*"
+        "c006/yii2-submit-spinner": "dev-master"
     },
     "autoload"   : {
         "psr-4": {
             "c006\\spinner\\": ""
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
