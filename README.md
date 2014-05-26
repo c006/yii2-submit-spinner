@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist "c006/yii2-submit-spinner" "*"
+php composer.phar require --prefer-dist "c006/yii2-submit-spinner" "dev-master"
 ```
 
 or add
 
 ```
-"c006/yii2-submit-spinner": "*"
+"c006/yii2-submit-spinner": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
