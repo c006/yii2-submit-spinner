@@ -73,6 +73,8 @@ Options
 Usage
 -----
 
+Demo: [http://yii2/index.php?r=demo/submit-spinner](http://yii2/index.php?r=demo/submit-spinner)
+
 Once the extension is installed, simply use it in your code by  :
 
 
