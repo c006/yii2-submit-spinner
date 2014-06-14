@@ -39,6 +39,16 @@ Required
 Add this line to your form
 `'beforeSubmit' => 'c006_show_spinner',`
 
+
+
+**Note:** If you the form does not use validation then you must send an attributes array for ``beforeSubmit`` to fire.
+
+Add ``'attributes' => $model->attributes, ``
+
+or ``'attributes' => ['element_name' => 'element_label'], ``
+
+For more help on this open a ticket and I will answer.
+
 Options
 -------
 
