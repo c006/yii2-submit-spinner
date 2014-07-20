@@ -1,6 +1,10 @@
 Yii2 Submit Spinner
 ===================
 
+
+**Updated July 20, 2014**
+
+
 Installation
 ------------
 
@@ -151,6 +155,15 @@ Works in FF *FireBug*
 
 >
     c006_show_spinner();
+
+
+Errors
+---------
+
+If you see get this error.
+
+![Error Message](http://demo.c006.us/images/yii2-submit-spinner/invalid-configuration.jpg)
+
 
 
 Comments / Suggestions

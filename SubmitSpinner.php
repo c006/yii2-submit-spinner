@@ -2,6 +2,7 @@
 
     namespace c006\spinner;
 
+    use c006\spinner\assets\AppAssets;
     use yii\base\Widget;
 
     /**
@@ -67,9 +68,10 @@
          */
         function init()
         {
+
             parent::init();
             $view = $this->getView();
-            SubmitSpinnerAssets::register($view);
+            AppAssets::register($view);
         }
 
 
@@ -78,6 +80,7 @@
          */
         public function run()
         {
+
             return $this->render('submit-spinner', [
                     'bg_color'               => $this->bg_color,
                     'bg_opacity'             => $this->bg_opacity,
