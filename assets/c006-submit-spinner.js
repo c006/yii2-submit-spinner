@@ -7,4 +7,5 @@ jQuery(function () {
 });
 function c006_show_spinner() {
     jQuery('#c006').show();
+    jQuery('html').scrollTop(0);
 }
