@@ -1,4 +1,5 @@
 <?php
+    /** @var $form_id string */
     /** @var $bg_color string */
     /** @var $bg_opacity float */
     /** @var $spin_speed float */
@@ -72,3 +73,8 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    window.onload = function() {
+        set_submit_spinner_form('<?= $form_id ?>');
+    };
+</script>

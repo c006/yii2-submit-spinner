@@ -16,6 +16,11 @@
         /**
          * @var string
          */
+        public $form_id = 'form-submit';
+
+        /**
+         * @var string
+         */
         public $bg_color = '#444444';
         /**
          * @var float
@@ -82,6 +87,7 @@
         {
 
             return $this->render('submit-spinner', [
+                    'form_id'               => $this->form_id,
                     'bg_color'               => $this->bg_color,
                     'bg_opacity'             => $this->bg_opacity,
                     'spin_speed'             => $this->spin_speed,
