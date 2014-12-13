@@ -32,10 +32,4 @@
         -o-transform: rotate(360deg);
     }
 }
-.rotating {
-    -webkit-animation: rotating 4s linear infinite;
-    -moz-animation: rotating 4s linear infinite;
-    -ms-animation: rotating 4s linear infinite;
-    -o-animation: rotating 4s linear infinite;
-    animation: rotating 4s linear infinite;
-}
+

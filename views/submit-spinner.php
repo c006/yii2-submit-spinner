@@ -1,6 +1,7 @@
 <?php
     /** @var $bg_color string */
     /** @var $bg_opacity float */
+    /** @var $spin_speed float */
     /** @var $radius int */
     /** @var $sections int */
     /** @var $section_size int */
@@ -42,7 +43,7 @@
         height           : <?= $radius ?>px;
         background-color : <?= $bg_spinner_color ?>;
         border-radius    : <?= $radius / 2 ?>px;
-        overflow         : hiddenX;
+        overflow         : hidden;
     }
 
     #c006 .circle {
@@ -54,6 +55,14 @@
         border-radius    : <?= $section_size / 2 ?>px;
         background-color : <?= $section_color ?>;
     }
+
+    #c006 .rotating {
+        -webkit-animation: rotating <?= $spin_speed ?>s linear infinite;
+        -moz-animation: rotating <?= $spin_speed ?>s linear infinite;
+        -ms-animation: rotating <?= $spin_speed ?>s linear infinite;
+        -o-animation: rotating <?= $spin_speed ?>s linear infinite;
+        animation: rotating <?= $spin_speed ?>s linear infinite;
+        }
 </style>
 <div id="c006">
     <div id="submit-spinner" class="rotating">

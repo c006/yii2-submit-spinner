@@ -34,22 +34,15 @@ Required
 
 >
     <?php $form = ActiveForm::begin([
-            'options' => [ 'class' => 'form-login', 'role' => 'form' ],
-            'beforeSubmit' => 'c006_show_spinner',
+           // 'beforeSubmit' => 'c006_show_spinner', // No longer needed, remove
         ]
     );
     ?>
 
-Add this line to your form
-`'beforeSubmit' => 'c006_show_spinner',`
+**NOTE: This is no longer needed, please remove.**
 
+`'beforeSubmit' => 'c006_show_spinner', `
 
-
-**Note:** If you the form does not use validation then you must send an attributes array for ``beforeSubmit`` to fire.
-
-Add ``'attributes' => $model->attributes, ``
-
-or ``'attributes' => ['element_name' => 'element_label'], ``
 
 For more help on this open a ticket and I will answer.
 
@@ -60,7 +53,7 @@ Options
 
 **bg_opacity =>**  {float}  ``` Opacity of the overlay ```
 
-**spin_speed =>**  {int}  ``` How many seconds a for a complete 360 rotation ```
+**spin_speed =>**  {float}  ``` How many seconds a for a complete 360 rotation ```
 
 **radius =>**  {int}  ``` Pixel radius/width of the spinner ```
 
@@ -151,10 +144,19 @@ _(5 large dots only, no background spinner)_
 
 To view without a form being submitted run this javascript function
 
-Works in FF *FireBug*
+`vendor\c006\yii2-submit-spinner\assets\c006-submit-spinner.js`
 
->
-    c006_show_spinner();
+
+    jQuery(function () {
+        ...
+        jQuery('#table-form').submit(
+            function (event) {
+                ...
+                ...
+                /* Used for testing, prevents submit */
+                event.preventDefault(); // <-- Uncomment this line
+            });
+    });
 
 
 Errors
