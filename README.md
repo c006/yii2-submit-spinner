@@ -162,7 +162,7 @@ Errors
 
 If you see this error.
 
-![Error Message](http://demo.c006.us/images/yii2-submit-spinner/invalid-configuration.jpg)
+![Error Message](http://github.c006.us/yii2-submit-spinner/alert.jpg)
 
 In this file ```vendor/c006/yii2-submit-spinner/assets/AppAssets.php```
 
