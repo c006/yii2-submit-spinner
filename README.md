@@ -12,15 +12,15 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```
+`
 php composer.phar require --prefer-dist "c006/yii2-submit-spinner" "dev-master"
-```
+`
 
 or add
 
-```
+`
 "c006/yii2-submit-spinner": "dev-master"
-```
+`
 
 to the require section of your `composer.json` file.
 
@@ -34,51 +34,59 @@ Required
 
 >
     <?php $form = ActiveForm::begin([
+            'id' => 'form-id',
             'options' => [ 'class' => 'form-login', 'role' => 'form' ],
-            'beforeSubmit' => 'c006_show_spinner',
+            // 'beforeSubmit' => 'c006_show_spinner', /* No longer used */
         ]
     );
     ?>
 
-Add this line to your form
+**Remove** this line from previous installs
 `'beforeSubmit' => 'c006_show_spinner',`
 
 
 
-**Note:** If you the form does not use validation then you must send an attributes array for ``beforeSubmit`` to fire.
-
-Add ``'attributes' => $model->attributes, ``
-
-or ``'attributes' => ['element_name' => 'element_label'], ``
-
-For more help on this open a ticket and I will answer.
-
 Options
 -------
 
-**bg_color =>**  {string} ``` Color of overlay, covers entire screen```
+**form_id =>**  {string}  
+` The ID of the form `
 
-**bg_opacity =>**  {float}  ``` Opacity of the overlay ```
+**bg_color =>**  {string}  
+` Color of the overlay `
 
-**spin_speed =>**  {int}  ``` How many seconds a for a complete 360 rotation ```
+**bg_opacity =>**  {float}  
+` Opacity of the overlay `
 
-**radius =>**  {int}  ``` Pixel radius/width of the spinner ```
+**spin_speed =>**  {int}  
+` How many seconds a for a complete 360 rotation `
 
-**bg_spinner_opacity =>**  {float}  ``` Opacity of  main spinner```
+**radius =>**  {int}  
+` Pixel radius/width of the spinner `
 
-**bg_spinner_color =>**  {string}  ``` Color of  main spinner ```
+**bg_spinner_opacity =>**  {float}  
+` Opacity of  main spinner`
 
-**sections =>**  {int}  ``` How many dots or circles ```
+**bg_spinner_color =>**  {string}  
+` Color of  main spinner `
 
-**section_size =>**  {int}  ``` Dot/circle size in px ```
+**sections =>**  {int}  
+` How many dots or circles `
 
-**section_color =>**  {string}  ``` Color of dots/circles ```
+**section_size =>**  {int}  
+` Dot/circle size in px `
 
-**section_offset =>**  {int}  ``` How far from the center in px ```
+**section_color =>**  {string}  
+` Color of dots/circles `
 
-**section_opacity_base =>**  {float}  ``` Minimum opacity e.g. 0.25 ```
+**section_offset =>**  {int}  
+` How far from the center in px `
 
-**proportionate_increase =>**  {boolean}  ``` Will increase/decrease dots proportionally to the main spinner ```
+**section_opacity_base =>**  {float}  
+` Minimum opacity e.g. 0.25 `
+
+**proportionate_increase =>**  {boolean}  
+` Will increase/decrease dots proportionally to the main spinner `
 
 
 
@@ -108,6 +116,7 @@ _(using defaults)_
     <?=
         c006\spinner\SubmitSpinner::widget(
                                [
+                                   'form_id'                => $form->id,
                                    'bg_color'               => '#444444',
                                    'bg_opacity'             => 0.8,
                                    'spin_speed'             => 4,
@@ -131,6 +140,7 @@ _(5 large dots only, no background spinner)_
 >
     <?= c006\spinner\SubmitSpinner::widget(
                                   [
+                                      'form_id'                => $form->id,
                                       'bg_color'               => '#333333',
                                       'bg_opacity'             => 0.8,
                                       'spin_speed'             => 4,
@@ -147,16 +157,6 @@ _(5 large dots only, no background spinner)_
            ) ?>
 
 
-
-
-To view without a form being submitted run this javascript function
-
-Works in FF *FireBug*
-
->
-    c006_show_spinner();
-
-
 Errors
 ---------
 
@@ -164,7 +164,7 @@ If you see this error.
 
 ![Error Message](http://github.c006.us/yii2-submit-spinner/alert.jpg)
 
-In this file ```vendor/c006/yii2-submit-spinner/assets/AppAssets.php```
+In this file `vendor/c006/yii2-submit-spinner/assets/AppAssets.php`
 
 comment out these lines.
 
