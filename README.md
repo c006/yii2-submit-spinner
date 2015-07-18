@@ -95,7 +95,7 @@ Options
 Usage
 -----
 
-Demo: [http://demo.c006.us/index.php?r=demo/submit-spinner](http://demo.c006.us/index.php?r=demo/submit-spinner)
+Demo: [http://demo.c006.us](http://demo.c006.us)
 
 Once the extension is installed, simply use it in your code by  :
 
