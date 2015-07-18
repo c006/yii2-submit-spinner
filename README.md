@@ -2,7 +2,7 @@ Yii2 Submit Spinner
 ===================
 
 
-**December 12, 2014**
+**Updated: July, 2015**
 
 
 Installation
