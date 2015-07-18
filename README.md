@@ -89,17 +89,16 @@ Options
 ` Will increase/decrease dots proportionally to the main spinner `
 
 
+Demo
+-------
 
+Demo: [http://demo.c006.us](http://demo.c006.us)
 
 
 Usage
 -----
 
-Demo: [http://demo.c006.us](http://demo.c006.us)
-
 Once the extension is installed, simply use it in your code by  :
-
-
 
 
 **Defaults option:**
@@ -156,24 +155,6 @@ _(5 large dots only, no background spinner)_
                                   ]
            ) ?>
 
-
-Errors
----------
-
-If you see this error.
-
-![Error Message](http://github.c006.us/yii2-submit-spinner/alert.jpg)
-
-In this file `vendor/c006/yii2-submit-spinner/assets/AppAssets.php`
-
-comment out these lines.
-
->
-        public $depends = [
-            // 'yii\web\YiiAsset',
-            // 'yii\widgets\ActiveFormAsset',
-            // 'yii\bootstrap\BootstrapAsset',
-        ];
 
 
 Comments / Suggestions
