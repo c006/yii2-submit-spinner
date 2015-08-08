@@ -2,7 +2,9 @@ Yii2 Submit Spinner
 ===================
 
 
-**Updated: July, 2015**
+**Updated: August, 2015**
+
+New additions under "Usage"
 
 
 Installation
@@ -32,22 +34,12 @@ Required
 
 + **yii \ widgets \ ActiveForm**
 
->
-    <?php $form = ActiveForm::begin([
-            'id' => 'form-id',
-            'options' => [ 'class' => 'form-login', 'role' => 'form' ],
-            // 'beforeSubmit' => 'c006_show_spinner', /* No longer used */
-        ]
-    );
-    ?>
-
-**Remove** this line from previous installs
-`'beforeSubmit' => 'c006_show_spinner',`
-
-
 
 Options
 -------
+
+**class_id =>**  {string}  
+` The ID of the container. default: "SubmitSpinner" `
 
 **form_id =>**  {string}  
 ` The ID of the form `
@@ -97,6 +89,14 @@ Demo: [http://demo.c006.us](http://demo.c006.us)
 
 Usage
 -----
+
+Added javascript functions
+
++ show_submit_spinner()
+
++ hide_submit_spinner()
+
+
 
 Once the extension is installed, simply use it in your code by  :
 

@@ -32,7 +32,7 @@
          * @inheritdoc
          */
         public $js = [
-            'c006-submit-spinner.js',
+            '',
         ];
         /**
          * @inheritdoc
