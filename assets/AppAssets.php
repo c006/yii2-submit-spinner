@@ -1,10 +1,5 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: user
-     * Date: 5/24/14
-     * Time: 11:47 AM
-     */
+
     namespace c006\spinner\assets;
 
     use yii\web\AssetBundle;
@@ -26,14 +21,12 @@
          * @inheritdoc
          */
         public $css = [
-            'c006-submit-spinner.css',
+            'c006-submit-spinner.css'
         ];
         /**
          * @inheritdoc
          */
-        public $js = [
-            '',
-        ];
+        public $js = [];
         /**
          * @inheritdoc
          */
