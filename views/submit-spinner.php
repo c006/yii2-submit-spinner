@@ -107,6 +107,6 @@ if ($proportionate_increase) {
     }
 
     function hide_submit_spinner() {
-        jQuery('#<?= $class_id ?>').show();
+        jQuery('#<?= $class_id ?>').hide();
     }
 </script>
