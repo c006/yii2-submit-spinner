@@ -1,5 +1,4 @@
 <?php
-
 namespace c006\spinner;
 
 use c006\spinner\assets\AppAssets;
@@ -70,14 +69,16 @@ class SubmitSpinner extends Widget
      * @var int
      */
     public $proportionate_increase = 1;
-
+    /**
+     * @var boolean
+     */
+    public $form_validate = FALSE;
 
     /**
      *
      */
     function init()
     {
-
         parent::init();
         $view = $this->getView();
         AppAssets::register($view);
@@ -89,7 +90,6 @@ class SubmitSpinner extends Widget
      */
     public function run()
     {
-
         return $this->render('submit-spinner', [
                 'class_id'               => $this->class_id,
                 'form_id'                => $this->form_id,
@@ -105,6 +105,7 @@ class SubmitSpinner extends Widget
                 'section_offset'         => $this->section_offset,
                 'section_opacity_base'   => $this->section_opacity_base,
                 'proportionate_increase' => $this->proportionate_increase,
+                'form_validate'    => $this->form_validate,
             ]
         );
     }
