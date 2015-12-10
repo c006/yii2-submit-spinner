@@ -2,9 +2,9 @@ Yii2 Submit Spinner
 ===================
 
 
-**Updated: August, 2015**
+**Current version 1.1.0**
 
-New additions under "Usage"
++ New add-on, **form_validate**
 
 
 Installation
@@ -80,6 +80,8 @@ Options
 **proportionate_increase =>**  {boolean}  
 ` Will increase/decrease dots proportionally to the main spinner `
 
+**form_validate =>**  {boolean}  
+` Will trigger on successful ActiveForm validation `
 
 Demo
 -------
