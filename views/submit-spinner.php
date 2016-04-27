@@ -82,7 +82,7 @@ if ($proportionate_increase) {
     }
 </style>
 <div id="<?= $class_id ?>">
-    <div class="spinner" class="rotating">
+    <div class="spinner rotating">
         <?php for ($i = 0; $i < $sections; $i++) : ?>
             <div class="circle"
                  style="transform:  rotate(<?= 360 / $sections * $i ?>deg) translateY(<?= $section_offset ?>px); opacity: <?= ($i / $sections + $section_opacity_base) ?>"></div>
