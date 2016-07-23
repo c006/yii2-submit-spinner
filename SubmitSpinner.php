@@ -72,7 +72,7 @@ class SubmitSpinner extends Widget
     /**
      * @var boolean
      */
-    public $form_validate = FALSE;
+    public $form_validate = TRUE;
 
     /**
      *
@@ -105,7 +105,7 @@ class SubmitSpinner extends Widget
                 'section_offset'         => $this->section_offset,
                 'section_opacity_base'   => $this->section_opacity_base,
                 'proportionate_increase' => $this->proportionate_increase,
-                'form_validate'    => $this->form_validate,
+                'form_validate'          => $this->form_validate,
             ]
         );
     }
