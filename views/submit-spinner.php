@@ -18,8 +18,8 @@
 list($r, $g, $b) = sscanf($bg_spinner_color, "#%02x%02x%02x");
 $bg_spinner_color = "rgba({$r},{$g},{$b},{$bg_spinner_opacity})";
 if ($proportionate_increase) {
-    $ratio          = $radius / 100 / 2;
-    $section_size   = $ratio * $section_size;
+    $ratio = $radius / 100 / 2;
+    $section_size = $ratio * $section_size;
     $section_offset = $ratio * $section_offset;
 }
 ?>
@@ -27,17 +27,17 @@ if ($proportionate_increase) {
 
     <?= '#'. $class_id ?>
     {
-        display          :none
+        display          : none
     ;
-        position         :absolute
+        position         : absolute
     ;
-        left             :0
+        left             : 0
     ;
-        top              :0
+        top              : 0
     ;
-        width            :100%
+        width            : 100%
     ;
-        height           :100%
+        height           : 100%
     ;
         background-color :
     <?= $bg_color ?>
@@ -45,41 +45,41 @@ if ($proportionate_increase) {
         opacity          :
     <?= $bg_opacity ?>
     ;
-        z-index          :100000
+        z-index          : 100000
     ;
-    }
+        }
 
     <?= '#'. $class_id ?>
     .spinner {
-        position         :absolute;
-        left             :45%;
-        top              :40%;
-        width            :<?= $radius ?>px;
-        height           :<?= $radius ?>px;
+        position         : absolute;
+        left             : 45%;
+        top              : 40%;
+        width            : <?= $radius ?>px;
+        height           : <?= $radius ?>px;
         background-color : <?= $bg_spinner_color ?>;
-        border-radius    :<?= $radius / 2 ?>px;
-        overflow         :hidden;
-    }
+        border-radius    : <?= $radius / 2 ?>px;
+        overflow         : hidden;
+        }
 
     <?= '#'. $class_id ?>
     .circle {
-        position         :absolute;
-        top              :<?= $radius / 2 - $section_size / 2 ?>px;
-        left             :<?= $radius / 2 - $section_size / 2  ?>px;
-        width            :<?= $section_size ?>px;
-        height           :<?= $section_size ?>px;
-        border-radius    :<?= $section_size / 2 ?>px;
+        position         : absolute;
+        top              : <?= $radius / 2 - $section_size / 2 ?>px;
+        left             : <?= $radius / 2 - $section_size / 2  ?>px;
+        width            : <?= $section_size ?>px;
+        height           : <?= $section_size ?>px;
+        border-radius    : <?= $section_size / 2 ?>px;
         background-color : <?= $section_color ?>;
-    }
+        }
 
     <?= '#'. $class_id ?>
     .rotating {
-        -webkit-animation :rotating <?= $spin_speed ?>s linear infinite;
-        -moz-animation    :rotating <?= $spin_speed ?>s linear infinite;
-        -ms-animation     :rotating <?= $spin_speed ?>s linear infinite;
-        -o-animation      :rotating <?= $spin_speed ?>s linear infinite;
-        animation         :rotating <?= $spin_speed ?>s linear infinite;
-    }
+        -webkit-animation : rotating <?= $spin_speed ?>s linear infinite;
+        -moz-animation    : rotating <?= $spin_speed ?>s linear infinite;
+        -ms-animation     : rotating <?= $spin_speed ?>s linear infinite;
+        -o-animation      : rotating <?= $spin_speed ?>s linear infinite;
+        animation         : rotating <?= $spin_speed ?>s linear infinite;
+        }
 </style>
 <div id="<?= $class_id ?>">
     <div class="spinner" class="rotating">
@@ -105,13 +105,13 @@ if ($proportionate_increase) {
             form_id = '#' + form_id;
         }
         jQuery(form_id)
-                .unbind('submit')
-                .submit(
-                        function (event) {
-                            show_submit_spinner();
-                            jQuery('html').scrollTop(0);
-                            jQuery('body').scrollTop(0);
-                        });
+            .unbind('submit')
+            .submit(
+                function (event) {
+                    show_submit_spinner();
+                    jQuery('html').scrollTop(0);
+                    jQuery('body').scrollTop(0);
+                });
     }
     <?php else : ?>
     function set_submit_spinner_form(form_id) {
@@ -120,13 +120,13 @@ if ($proportionate_increase) {
             form_id = '#' + form_id;
         }
         jQuery(form_id)
-                .on('afterValidate', function (event, params) {
-                    if (jQuery(form_id).find('.has-error').length == 0) {
-                        show_submit_spinner();
-                        jQuery('html').scrollTop(0);
-                        jQuery('body').scrollTop(0);
-                    }
-                });
+            .on('afterValidate', function (event, params) {
+                if (jQuery(form_id).find('.has-error').length == 0) {
+                    show_submit_spinner();
+                    jQuery('html').scrollTop(0);
+                    jQuery('body').scrollTop(0);
+                }
+            });
     }
     <?php endif ?>
 
