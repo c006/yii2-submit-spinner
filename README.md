@@ -159,6 +159,21 @@ _(5 large dots only, no background spinner)_
 
 
 
+**Variation**
+
+>
+    .spinner {
+        display          :inline-block;
+        position         :absolute;
+        left             :50%;
+        top              :50%;
+        transform: translate(-50%, -50%);
+        width            :<?= $radius ?>px; << COMMENT OUT
+        height           :<?= $radius ?>px; << COMMENT OUT
+        background-color : <?= $bg_spinner_color ?>;
+        border-radius    :<?= $radius / 2 ?>px;
+    }
+
 Comments / Suggestions
 --------------------
 
