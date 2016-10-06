@@ -36,7 +36,7 @@ class SubmitSpinner extends Widget
     /**
      * @var int
      */
-    public $radius = 200;
+    public $radius = 100;
     /**
      * @var float
      */
